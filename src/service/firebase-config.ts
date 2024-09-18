@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider, signInWithEmailAndPassword, createUserWith
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCq5IYUQY7123wJLlK9debaAhYqfl7ZtpA",
-  authDomain: "budget-manager-a72b9.firebaseapp.com",
-  projectId: "budget-manager-a72b9",
-  storageBucket: "budget-manager-a72b9.appspot.com",
-  messagingSenderId: "125545359081",
-  appId: "1:125545359081:web:aff48135c6dfb00c177278"
+  apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx9",
+  storageBucket: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 };
 
 const app = initializeApp(firebaseConfig);
