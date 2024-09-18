@@ -1,46 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# Budget Manager - Gerenciador de Finanças
 
-### `yarn start`
+Este é um aplicativo de gerenciamento de finanças pessoais, desenvolvido com **React** e **TypeScript**, utilizando **Firebase** para autenticação e armazenamento de dados, e **Chart.js** para visualização gráfica de despesas e receitas. O objetivo principal é facilitar o controle financeiro, permitindo que o usuário registre e gerencie suas receitas e despesas de maneira intuitiva e visual.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Funcionalidades
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Gerenciamento de Despesas e Receitas**: Adicione, edite e exclua despesas e receitas, mantendo um controle financeiro eficiente.
+- **Autenticação com Firebase**: Login utilizando sua conta do Google ou registre-se com email e senha.
+- **Gráficos Interativos**: Visualize suas finanças com gráficos dinâmicos e intuitivos utilizando **Chart.js**.
+- **Interface Responsiva**: Aplicação totalmente responsiva e acessível em dispositivos móveis.
+  
+## Tecnologias Utilizadas
 
-### `yarn test`
+- **React** com **TypeScript** para a construção da interface do usuário.
+- **Firebase** para autenticação, banco de dados e hospedagem.
+- **Chart.js** para criação de gráficos.
+- **CSS** para estilização da aplicação.
+  
+## Instalação e Execução
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga os passos abaixo para rodar o projeto localmente:
 
-### `yarn build`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/budget-manager.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instale as dependências:
+   ```bash
+   cd budget-manager
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Configure o Firebase:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Crie um projeto no Firebase Console.
+   - Habilite a autenticação com Google e Email/Senha.
+   - Adicione as configurações do Firebase no arquivo `.env` ou diretamente no código (exemplo no firebaseConfig).
 
-### `yarn eject`
+4. Rode a aplicação:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Configuração do Firebase
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+No Firebase, habilite os seguintes serviços:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Autenticação**: com Google e Email/Senha.
+- **Firestore**: para armazenar os dados das receitas e despesas.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Adicione suas configurações do Firebase ao projeto:
 
-## Learn More
+```typescript
+const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_AUTH_DOMAIN",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_STORAGE_BUCKET",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+  appId: "SEU_APP_ID",
+};
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Meu Primeiro Projeto com Firebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este foi meu primeiro projeto utilizando o Firebase para implementar autenticação e armazenamento de dados. A integração com o Firebase facilitou a implementação de login com o Google e a criação de contas utilizando email e senha. O aprendizado com esse projeto foi significativo, permitindo explorar tanto a parte de autenticação quanto a manipulação de dados em tempo real.
+
+## Contribuições
+
+Contribuições são sempre bem-vindas! Se você tiver sugestões, melhorias ou encontrar bugs, fique à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
+
+---
+
+Obrigado por conferir o projeto!
+
+
