@@ -1,0 +1,125 @@
+/* Estilos Gerais */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dashboard-column {
+    flex: 1;
+    max-width: 600px; /* Limita a largura máxima para melhor visualização */
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column; /* Organiza os componentes verticalmente */
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilos para Receitas e Despesas */
+  .receitas-container, .despesas-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+  }
+  
+  .receitas-box, .despesas-box {
+    margin: 0 auto;
+  }
+  
+  .receitas-title, .despesas-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .receitas-input, .despesas-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .receitas-button, .despesas-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4CAF50; /* Green */
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .receitas-button:hover, .despesas-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Lista de Receitas e Despesas */
+  .receitas-list-item, .despesas-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .receitas-list-item:last-child, .despesas-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .receitas-list-item span, .despesas-list-item span {
+    font-size: 1em;
+  }
+  
+  .receitas-list-item button, .despesas-list-item button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  
+  .receitas-list-item button {
+    background-color: #f44336; /* Red */
+  }
+  
+  .receitas-list-item button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .despesas-list-item button {
+    background-color: #f44336; /* Red */
+  }
+  
+  .despesas-list-item button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .receitas-list-item button.edit, .despesas-list-item button.edit {
+    background-color: #2196F3; /* Blue */
+  }
+  
+  .receitas-list-item button.edit:hover, .despesas-list-item button.edit:hover {
+    background-color: #1976D2;
+  }
+  
+  /* Estilos para o Gráfico */
+  .grafico-container {
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima para melhor visualização */
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,87 @@
+/* index.css */
+
+/* Estilos para Despesas */
+.despesas-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.despesas-box {
+  margin: 0 auto;
+}
+
+.despesas-title {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.despesas-input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.despesas-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #f44336; /* Red */
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.despesas-button:hover {
+  background-color: #d32f2f;
+}
+
+.despesas-list {
+  margin-top: 20px;
+}
+
+.despesas-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.despesas-list-item:last-child {
+  border-bottom: none;
+}
+
+.despesas-list-item span {
+  font-size: 1em;
+}
+
+.despesas-list-item-button {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.despesas-list-item-button.edit {
+  background-color: #2196F3; 
+}
+
+.despesas-list-item-button.edit:hover {
+  background-color: #1976D2;
+}
+
+.despesas-list-item-button.delete {
+  background-color: #f44336; /* Red */
+}
+
+.despesas-list-item-button.delete:hover {
+  background-color: #d32f2f;
+}
